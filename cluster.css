@@ -73,6 +73,11 @@
     width:100%;
     text-align: center;
     display: none;
+    border: 2px solid red;
+    position: absolute:
+    top:10%;
+    left : 10%;
+    
 }
 
 @media screen and (max-width:600px){
