@@ -1,0 +1,342 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Invent | Chandigarh University</title>
+    <link type="text/css" rel="stylesheet" href="/index.css">
+    <link type="text/css" rel="stylesheet" href="/cluster.css">
+    <link type="text/css" rel="stylesheet" href="/about.css">
+    <link type="text/css" rel="stylesheet" href="/sponsor.css">
+</head>
+<body class="main-body" id="main-body">
+    <div id="particles-js"></div>
+    <div id="mySidebar" class="sidebar">
+        <a class="sidebarlinks" href="javascript:void(0)" id="closebtn" onclick="closesidebar()">&times;</a>
+        <br><br>
+        <a class="sidebarlinks">COMPETETIONS</a>
+        <a class="sidebarlinks">WORKSHOPS</a>
+        <a class="sidebarlinks">EXHIBITIONS</a>
+        <a class="sidebarlinks">LECTURES</a>
+        <a class="sidebarlinks" onclick="opensponsor()">SPONSORS</a>
+        <a class="sidebarlinks" onclick="openaboutus()">ABOUT US</a>
+        <a class="sidebarlinks">ORGANIZING TEAM</a>
+        <a class="sidebarlinks">CONTACT US</a>
+    </div>
+    <div class="nav-bar" id="nav-bar">
+        <div class="nav-bar-1">
+            <span>COMPETETIONS</span>
+            <span>WORKSHOPS</span>
+            <span>EXHIBITIONS</span>
+            <span>LECTURES</span>
+        </div>
+        <div class="nav-bar-2">
+            <img src="/cu logo.png">
+            <img src="/Tech logo.png">
+            <button onclick="opensidebar()" type="button" class="opensidebar" id="opensidebar">&#9776;</button>
+        </div>
+        <div class="nav-bar-3">
+            <a onclick="opensponsor()"><span>SPONSORS</span></a>
+            <a onclick="openaboutus()"><span>ABOUT US</span></a>
+            <span>ORGANIZING TEAM</span>
+            <span>CONTACT US</span>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <br><br>
+        <div class="start-section" id="start-section">
+            <img src="Tech logo.png"><br><br><br><br><br><br><br><br><br>
+            <a onclick="entermultiverse()">
+                <svg width="349" height="90" viewBox="0 0 349 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M38.747 53H26.84V38.93H38.747V41.765H29.99V44.516H38.432V47.33H29.99V50.165H38.747V53ZM45.4201 53H42.2701V38.93H45.6301L50.6701 45.587L52.6021 48.548H52.8331L52.6861 45.713V38.93H55.8361V53H52.4761L47.2891 46.28L45.5041 43.634H45.2941L45.4201 46.217V53ZM67.4404 53H64.2904V41.765H59.0614V38.93H72.6694V41.765H67.4404V53ZM87.8058 53H75.8988V38.93H87.8058V41.765H79.0488V44.516H87.4908V47.33H79.0488V50.165H87.8058V53ZM94.4789 53H91.3289V38.93H99.0989C102.564 38.93 104.538 40.463 104.538 43.151C104.538 45.44 103.215 46.805 100.569 47.057V47.225C101.829 47.561 102.312 48.233 102.837 49.22L104.874 53H101.22L99.2879 49.346C98.7209 48.254 98.1959 47.897 96.5579 47.897H94.4789V53ZM94.4789 41.765V45.524H99.0779C100.569 45.524 101.241 45.104 101.241 43.634C101.241 42.248 100.569 41.765 99.0779 41.765H94.4789ZM121.142 53H117.992V41.765H112.763V38.93H126.371V41.765H121.142V53ZM132.751 53H129.601V38.93H132.751V44.516H140.101V38.93H143.251V53H140.101V47.351H132.751V53ZM158.947 53H147.04V38.93H158.947V41.765H150.19V44.516H158.632V47.33H150.19V50.165H158.947V53ZM170.961 53H167.811V38.93H172.074L175.371 45.86L176.694 49.157H176.925L178.206 45.86L181.398 38.93H185.682V53H182.532V45.86L182.637 43.655H182.406L181.587 45.86L178.647 52.16H174.825L171.885 45.86L171.066 43.655H170.835L170.961 45.86V53ZM196.238 53.21C191.66 53.21 189.329 50.9 189.329 47.12V38.93H192.479V46.889C192.479 49.283 193.382 50.144 196.238 50.144C199.115 50.144 199.997 49.283 199.997 46.889V38.93H203.147V47.12C203.147 50.9 200.837 53.21 196.238 53.21ZM218.362 53H206.833V38.93H209.983V50.165H218.362V53ZM229.563 53H226.413V41.765H221.184V38.93H234.792V41.765H229.563V53ZM241.171 53H238.021V38.93H241.171V53ZM254.244 53H249.75L243.912 38.93H247.713L251.934 49.808H252.144L256.302 38.93H260.082L254.244 53ZM274.759 53H262.852V38.93H274.759V41.765H266.002V44.516H274.444V47.33H266.002V50.165H274.759V53ZM281.432 53H278.282V38.93H286.052C289.517 38.93 291.491 40.463 291.491 43.151C291.491 45.44 290.168 46.805 287.522 47.057V47.225C288.782 47.561 289.265 48.233 289.79 49.22L291.827 53H288.173L286.241 49.346C285.674 48.254 285.149 47.897 283.511 47.897H281.432V53ZM281.432 41.765V45.524H286.031C287.522 45.524 288.194 45.104 288.194 43.634C288.194 42.248 287.522 41.765 286.031 41.765H281.432ZM301.306 53.21C297.043 53.21 294.649 51.53 294.649 48.254V48.128H297.799V48.506C297.799 49.808 298.45 50.333 301.306 50.333C303.826 50.333 304.414 49.955 304.414 49.01C304.414 48.149 303.931 47.834 302.482 47.582L298.534 47.015C296.014 46.616 294.523 45.356 294.523 43.067C294.523 40.946 296.245 38.72 300.97 38.72C305.296 38.72 307.312 40.715 307.312 43.676V43.802H304.141V43.508C304.141 42.164 303.448 41.597 300.655 41.597C298.387 41.597 297.694 42.038 297.694 42.941C297.694 43.76 298.156 44.054 299.332 44.264L303.28 44.894C306.43 45.398 307.564 46.931 307.564 48.863C307.564 51.152 305.779 53.21 301.306 53.21ZM322.854 53H310.947V38.93H322.854V41.765H314.097V44.516H322.539V47.33H314.097V50.165H322.854V53Z" fill="white"/>
+                    <path d="M25.1922 3H31.295H163.477H346V33.7964V64.5927L323.808 87H3V57.4967V25.269L25.1922 3Z" stroke="white" stroke-width="1.5"/>
+                    <path d="M3 57.4967V25.269L25.1922 3H31.295L113.5 3M346 33.7964V64.5927L323.808 87H245" stroke="#F93308" stroke-width="5.5"/>
+                </svg>
+            </a>
+        </div>
+        <div class="home-content" id="home-content">
+            <svg width="494" height="234" viewBox="0 0 494 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_833_217)">
+                <path d="M118.507 99V66.6258L133.967 82.0854V99H118.507ZM95.0452 36.5251H157.52V51.9847H133.967V74.9922L118.507 59.5326V51.9847H95.0452V36.5251ZM196.634 83.5404L233.282 83.6313V99.0909H181.174V63.7158L196.634 79.1753V83.5404ZM233.282 75.6287L199.998 75.7197L181.083 56.8044V36.616H233.282V52.0756H198.271L206.364 60.1691H233.282V75.6287ZM274.644 59.6235L274.007 61.0785L262.276 49.3474L262.913 48.529C268.914 39.8898 278.827 34.7063 289.376 34.7063C296.742 34.7063 303.926 37.2526 309.655 41.8904C315.293 46.4374 319.204 52.8031 320.75 59.8054L321.113 61.3513H304.744L304.381 60.6238C303.562 58.6232 302.38 56.8953 300.834 55.3494C297.742 52.2575 293.65 50.5296 289.285 50.5296C284.92 50.5296 280.827 52.2575 277.736 55.3494C276.462 56.6225 275.462 58.0776 274.644 59.6235ZM304.29 72.9915L304.744 72.5368H321.113L320.75 74.0828C319.749 78.6297 317.658 82.9948 314.748 86.7233C311.929 90.3608 308.2 93.4527 304.108 95.5443C303.38 95.9081 302.653 96.2718 301.925 96.5447C297.924 98.1816 293.741 99 289.376 99C280.827 99 272.734 95.6353 266.641 89.5424C260.548 83.4495 257.183 75.3559 257.183 66.8077C257.183 63.1701 257.82 59.5326 259.002 56.0769L259.639 54.1672L273.098 67.6261V68.0808C273.37 71.9002 275.007 75.5378 277.736 78.266C280.464 80.9941 284.101 82.631 287.921 82.9038C288.648 82.9948 289.467 82.9948 290.194 82.9948C291.831 82.9038 293.468 82.5401 295.014 81.9944C295.56 81.8126 296.014 81.6307 296.469 81.3579C298.015 80.5394 299.47 79.5391 300.743 78.266C302.289 76.72 303.471 74.9922 304.29 72.9915ZM344.463 99V61.806L359.922 77.2656V99H344.463ZM383.475 36.5251L398.935 36.616V99.0909H383.475V75.6287H365.288L344.463 54.8038V36.5251H359.922V48.3471L371.653 60.0782H383.475V36.5251ZM34.8036 136.525H50.2632V159.714L34.8036 144.255V136.525ZM34.8036 199V151.348L50.2632 166.808V199H34.8036ZM73.8647 199V163.079L89.3242 178.539V199H73.8647ZM116.333 149.893L131.429 134.797V199.091H116.879L116.242 198.454L99.2366 181.449L89.3242 171.536L73.8647 156.077V136.616H76.32L76.6838 136.98L115.969 176.265V150.257L116.333 149.893ZM172.206 134.797L179.845 150.893L194.122 181.085L193.849 181.631L185.574 199L155.109 134.797H172.206ZM198.942 134.888H216.129L198.578 171.9L196.941 175.265L188.393 157.168L188.666 156.623L198.942 134.888ZM255.099 183.54L291.748 183.631V199.091H239.64V163.716L255.099 179.175V183.54ZM291.748 175.629L258.464 175.72L239.549 156.804V136.616H291.748V152.076H256.736L264.83 160.169H291.748V175.629ZM315.467 199V163.079L330.927 178.539V199H315.467ZM357.935 149.893L373.031 134.797V199.091H358.481L357.844 198.454L340.839 181.449L330.927 171.536L315.467 156.077V136.616H317.922L318.286 136.98L357.572 176.265V150.257L357.935 149.893ZM420.174 199V166.626L435.633 182.085V199H420.174ZM396.711 136.525H459.186V151.985H435.633V174.992L420.174 159.533V151.985H396.711V136.525Z" fill="#E6D8D5"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_833_217" x="0.803711" y="0.706299" width="492.383" height="232.385" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset/>
+                <feGaussianBlur stdDeviation="17"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_833_217"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_833_217" result="shape"/>
+                </filter>
+                </defs>
+                </svg>
+            <br>
+            <p>
+                Vasudhaiva Kutumbakam<br>One Earth - One Family - One Future
+            </p>                
+        </div>
+        <div class="about-section" id="about-section">
+            <svg width="100%" height="667" class="about-frame-mobile" viewBox="0 0 100% 667" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(2vw,0)" d="M127.631 1H82.976C80.4579 1 78.3327 2.87265 78.0158 5.37078L75.8926 22.1082C75.5757 24.6063 73.4505 26.4789 70.9323 26.4789H6C3.23858 26.4789 1 28.7175 1 31.4789L1 629.821C1 631.227 1.59186 632.568 2.63056 633.515L36.8143 664.694C37.7354 665.534 38.9371 666 40.1838 666H71.2339C73.688 666 75.7793 664.219 76.1701 661.796L80.2932 636.232C80.6839 633.809 82.7753 632.028 85.2294 632.028H101" stroke="white" stroke-opacity="0.5"/>
+                <path transform="translate(50vw,0)" d="M0.368523 1H45.024C47.5421 1 49.6673 2.87265 49.9842 5.37078L52.1074 22.1082C52.4243 24.6063 54.5495 26.4789 57.0677 26.4789H122C124.761 26.4789 127 28.7175 127 31.4789L127 629.821C127 631.227 126.408 632.568 125.369 633.515L91.1857 664.694C90.2646 665.534 89.0629 666 87.8162 666H56.7661C54.312 666 52.2207 664.219 51.8299 661.796L47.7068 636.232C47.3161 633.809 45.2247 632.028 42.7706 632.028H27" stroke="white" stroke-opacity="0.5"/>
+                <g transform="translate(150,620)"><path transform="scale(0.5,0.5)" d="M219.237 28.7664L205.452 2.6773C204.586 1.03849 202.885 0.0131531 201.031 0.0131531L25.4564 0.0131531C23.9642 0.0131531 22.55 0.679611 21.6002 1.83044L1.60245 26.0599C0.219011 27.7361 0.0768172 30.114 1.25065 31.9431L17.8607 57.8256C18.7803 59.2586 20.366 60.1251 22.0687 60.1251L197.905 60.1253C199.532 60.1253 201.057 59.3338 201.994 58.0035L218.905 33.9804C219.987 32.4431 220.115 30.4286 219.237 28.7664Z" fill="#F93308"/>
+                    <text x="35" fill="white" y="15" font-size="10px" font-weight="bold">CLICK</text>
+                    <text x="25" fill="white" y="25" font-size="5px">TO EXPLORE CLUSTER</text>
+                </g>
+            </svg>
+                
+            <svg width="100%" height="755" class="about-frame-wide" viewBox="0 0 1400 755" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g transform="scale(1.1,0.8)">
+                <path d="M511.367 1H311.94C308.722 1 305.818 2.92712 304.568 5.89144L296.043 26.1086C294.792 29.0729 291.888 31 288.671 31H11C6.58172 31 3 34.5817 3 39L3 707.899C3 711.502 5.40864 714.661 8.88331 715.614L147.752 753.715C148.442 753.904 149.154 754 149.869 754H289.794C292.742 754 295.452 752.379 296.845 749.78L313.767 718.22C315.16 715.621 317.869 714 320.817 714H520.157" stroke="white" stroke-width="2"/>
+                <path d="M764.33 1H951.06C954.278 1 957.182 2.92712 958.432 5.89144L966.957 26.1086C968.208 29.0729 971.112 31 974.329 31H1252C1256.42 31 1260 34.5817 1260 39L1260 707.899C1260 711.502 1257.59 714.661 1254.12 715.614L1115.25 753.715C1114.56 753.904 1113.85 754 1113.13 754H973.206C970.258 754 967.548 752.379 966.155 749.78L949.233 718.22C947.84 715.621 945.131 714 942.183 714H751.145" stroke="white" stroke-width="2"/>
+                <path d="M250 31H11C6.58172 31 3 34.5817 3 39V112" stroke="#F93308" stroke-width="6" stroke-linecap="square"/>
+                <path d="M1137 747.969L1254.01 717.527C1257.54 716.61 1260 713.427 1260 709.784V604.969" stroke="#F93308" stroke-width="6" stroke-linecap="square"/>
+            </g>
+            <a href="#">
+            <g transform="translate(590,540)"><path d="M219.237 28.7664L205.452 2.6773C204.586 1.03849 202.885 0.0131531 201.031 0.0131531L25.4564 0.0131531C23.9642 0.0131531 22.55 0.679611 21.6002 1.83044L1.60245 26.0599C0.219011 27.7361 0.0768172 30.114 1.25065 31.9431L17.8607 57.8256C18.7803 59.2586 20.366 60.1251 22.0687 60.1251L197.905 60.1253C199.532 60.1253 201.057 59.3338 201.994 58.0035L218.905 33.9804C219.987 32.4431 220.115 30.4286 219.237 28.7664Z" fill="#F93308"/>
+                <text x="75" fill="white" y="25" font-size="20px" font-weight="bold">CLICK</text>
+                <text x="32" fill="white" y="46" font-size="15px">TO EXPLORE CLUSTER</text>
+            </g>
+            </a>
+                </svg>
+                <div class="about-heading">ABOUT<BR>TECH INVENT</div>
+                <div class="about-section-content">
+                <div class="about-content-left">
+                    <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta quasi ab expedita. Illum, aperiam quasi fuga mollitia veritatis reiciendis fugiat ex labore corporis? Ad non beatae corporis voluptates ut?<br><br>
+                    <a href="#">
+                        <svg width="194" height="77" style="margin-left: auto;margin-right:auto;" viewBox="0 0 194 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.7091 3H26.8541H138.29H191V28.9629V54.9257L172.291 73.8161H3V48.9434V21.7738L21.7091 3Z" stroke="white" stroke-width="1.26457"/>
+                        <path d="M3 48.9434V21.7738L21.7091 3H26.8541L96.157 3M191 28.9629V54.9257L172.291 73.8161H105.852" stroke="#F93308" stroke-width="4.63677"/>
+                        <text x="23" fill="white" y="45" font-size="X-large" font-weight="bold">KNOW MORE</text>
+                        </svg>
+                    </a>
+                </div>
+                <div class="about-content-right">
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/1MieluM0c6c?controls=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="cluster-map" id="cluster-map">
+            <div class="cluster-map-1">
+                <!-- <svg width="300" height="49"  viewBox="0 0 157 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M156.199 0.80102H70.4898H16.3522L0.801025 16.3522V31.709L16.3522 47.2602H156.199V0.80102Z" stroke="white" stroke-width="4"/>
+                    <text x="40" fill="white" y="30" font-size="larger" font-weight="bold">&lt;&lt; BACK</text>
+                    </svg> -->
+                    <p class="cmpara">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis est molestias dolorem ab officiis sunt repellat dignissimos, beatae animi asperiores.<br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non at quia aspernatur eveniet? Fugiat quam odit veniam eveniet similique deserunt, eum reiciendis explicabo ipsa error dignissimos fuga sint porro.
+                    </p>
+            </div>
+            <div class="cluster-map-2">
+                <svg width="700" height="600" viewBox="0 0 747 647" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.6" d="M340.767 8.04881C358.384 -1.60953 379.685 -1.72532 397.406 7.74091L714.912 177.349C740.136 190.823 752.206 220.337 743.653 247.626L631.704 604.796C623.926 629.611 600.934 646.5 574.928 646.5H380.564H164.027C137.57 646.5 114.291 629.03 106.897 603.627L2.93551 246.425C-4.86012 219.64 6.99985 191.035 31.4612 177.624L340.767 8.04881Z" stroke="white" stroke-opacity="0.3"/>
+                    <path opacity="0.6" d="M509 555H246M127 317 193 503M130 209 330 92M551 503 621 309M402 92 598 207" stroke="white"/>
+                <a   onmouseover="currentcluster('engineering')">
+                    <g transform="translate(327,20)">
+                    <path id="engpath" d="M34 83.8453C37.7128 85.9889 42.2872 85.9889 46 83.8453L71.507 69.1188C75.2199 66.9752 77.507 63.0137 77.507 58.7265V29.2735C77.507 24.9863 75.2199 21.0248 71.507 18.8812L46 4.1547C42.2872 2.01111 37.7128 2.01111 34 4.15469L8.49296 18.8812C4.78014 21.0248 2.49296 24.9863 2.49296 29.2735V58.7265C2.49296 63.0137 4.78014 66.9752 8.49296 69.1188L34 83.8453Z" stroke="url(#paint0_linear_833_391)" stroke-width="4"/>
+                    <text x="-25" fill="white" y="110" font-size="large" font-family="'Montserrat', sans-serif" font-weight="bold">ENGINEERING</text>
+                    <image href="/prototype 1.png" x="20" y="20" width="40px" height="40px" />
+                    </g>
+                </a>
+                <a   onmouseover="currentcluster('liberal-arts')">
+                  <g transform="translate(70,200)">
+                    <path id="lapath" d="M34 83.8453C37.7128 85.9889 42.2872 85.9889 46 83.8453L71.507 69.1188C75.2199 66.9752 77.507 63.0137 77.507 58.7265V29.2735C77.507 24.9863 75.2199 21.0248 71.507 18.8812L46 4.1547C42.2872 2.01111 37.7128 2.01111 34 4.15469L8.49296 18.8812C4.78014 21.0248 2.49296 24.9863 2.49296 29.2735V58.7265C2.49296 63.0137 4.78014 66.9752 8.49296 69.1188L34 83.8453Z" stroke="url(#paint0_linear_833_391)" stroke-width="4"/>
+                    <text  x="-25" fill="white" y="110" font-size="large" font-family="'Montserrat', sans-serif" font-weight="bold">LIBERAL ARTS</text>
+                    <image href="/idea 1.png" x="20" y="20" width="40px" height="40px" />
+                  </g>
+                </a>
+                <a   onmouseover="currentcluster('allied-health')">
+                  <g transform="translate(590,200)">
+                    <path id="ahpath" d="M34 83.8453C37.7128 85.9889 42.2872 85.9889 46 83.8453L71.507 69.1188C75.2199 66.9752 77.507 63.0137 77.507 58.7265V29.2735C77.507 24.9863 75.2199 21.0248 71.507 18.8812L46 4.1547C42.2872 2.01111 37.7128 2.01111 34 4.15469L8.49296 18.8812C4.78014 21.0248 2.49296 24.9863 2.49296 29.2735V58.7265C2.49296 63.0137 4.78014 66.9752 8.49296 69.1188L34 83.8453Z" stroke="url(#paint0_linear_833_391)" stroke-width="4"/>
+                    <text  x="-25" fill="white" y="110" font-size="large" font-family="'Montserrat', sans-serif" font-weight="bold">ALLIED HEALTH</text>
+                    <image href="/healthcare 1.png" x="20" y="20" width="40px" height="40px" />
+                  </g>
+                </a>
+                <a   onmouseover="currentcluster('basic-science')">
+                  <g transform="translate(515,510)">
+                    <path id="bspath" d="M34 83.8453C37.7128 85.9889 42.2872 85.9889 46 83.8453L71.507 69.1188C75.2199 66.9752 77.507 63.0137 77.507 58.7265V29.2735C77.507 24.9863 75.2199 21.0248 71.507 18.8812L46 4.1547C42.2872 2.01111 37.7128 2.01111 34 4.15469L8.49296 18.8812C4.78014 21.0248 2.49296 24.9863 2.49296 29.2735V58.7265C2.49296 63.0137 4.78014 66.9752 8.49296 69.1188L34 83.8453Z" stroke="url(#paint0_linear_833_391)" stroke-width="4"/>
+                    <text  x="-35" fill="white" y="110" font-size="large" font-family="'Montserrat', sans-serif" font-weight="bold">BASIC SCIENCE</text>
+                    <image href="/search 1.png" x="20" y="20" width="40px" height="40px" />
+                  </g>
+                </a>
+                <a   onmouseover="currentcluster('management')">
+                  <g transform="translate(150,510)">
+                    <path id="manpath" d="M34 83.8453C37.7128 85.9889 42.2872 85.9889 46 83.8453L71.507 69.1188C75.2199 66.9752 77.507 63.0137 77.507 58.7265V29.2735C77.507 24.9863 75.2199 21.0248 71.507 18.8812L46 4.1547C42.2872 2.01111 37.7128 2.01111 34 4.15469L8.49296 18.8812C4.78014 21.0248 2.49296 24.9863 2.49296 29.2735V58.7265C2.49296 63.0137 4.78014 66.9752 8.49296 69.1188L34 83.8453Z" stroke="url(#paint0_linear_833_391)" stroke-width="4"/>
+                    <text  x="-25" fill="white" y="110" font-size="large" font-family="'Montserrat', sans-serif" font-weight="bold">MANAGEMENT</text>
+                    <image href="/team-management 1.png" x="20" y="20" width="40px" height="40px" />
+                  </g>
+                </a>
+                <text id="clusterheading" x="250" fill="white" y="310" font-size="40px" font-family="'Montserrat', sans-serif" font-weight="bold">Engineering</text>
+                    
+                    <defs>
+                        <linearGradient id="paint0_linear_833_392" x1="67" y1="3" x2="5.5" y2="96.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#11131F"/>
+                        <stop offset="0.9999" stop-color="#141A2B"/>
+                        <stop offset="1" stop-color="#6B9BB6"/>
+                        </linearGradient>
+                    </defs>
+                    <defs>
+                        <linearGradient id="paint0_linear_833_391" x1="36" y1="81" x2="36" y2="-1" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#1A2A40"/>
+                        <stop offset="0.477083" stop-color="#1C4F77"/>
+                        <stop offset="1" stop-color="#6B9BB6"/>
+                        </linearGradient>
+                    </defs>
+                  </svg>
+                  
+                
+                
+
+            </div>
+            <div class="cluster-map-3">
+                <svg width="137" height="139" viewBox="0 0 139.5 139.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.3572 1.4624H136V35.2633V112.967L111.643 137.56H1V61.2759V25.9039L25.3572 1.4624Z" fill="#0C0C15" stroke="white" stroke-width="1.34106"/>
+                    <path d="M3 62.8135V27.4415L27.3572 3H62.9007M138 83.1183V114.504L113.643 139.098H87.0397" stroke="#F8522E" stroke-width="4.91722"/>
+                    <text id="tcomp"  x="45" fill="white" y="70" font-size="60px" font-family="'Montserrat', sans-serif" font-weight="bold">8</text>
+                    <text x="15" fill="white" y="100" font-size="10px" font-family="'Montserrat', sans-serif" font-weight="bold">TOTAL COMPETETIONS</text>
+                    </svg>
+                <svg width="137" height="139" viewBox="0 0 139.5 139.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.3572 1.4624H136V35.2633V112.967L111.643 137.56H1V61.2759V25.9039L25.3572 1.4624Z" fill="#0C0C15" stroke="white" stroke-width="1.34106"/>
+                    <path d="M3 62.8135V27.4415L27.3572 3H62.9007M138 83.1183V114.504L113.643 139.098H87.0397" stroke="#F8522E" stroke-width="4.91722"/>
+                    <text id="twork" x="45" fill="white" y="70" font-size="60px" font-family="'Montserrat', sans-serif" font-weight="bold">15</text>
+                    <text x="15" fill="white" y="100" font-size="10px" font-family="'Montserrat', sans-serif" font-weight="bold">TOTAL WORKSHOPS</text>
+                    </svg>
+                <svg width="137" height="139" viewBox="0 0 139.5 139.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.3572 1.4624H136V35.2633V112.967L111.643 137.56H1V61.2759V25.9039L25.3572 1.4624Z" fill="#0C0C15" stroke="white" stroke-width="1.34106"/>
+                    <path d="M3 62.8135V27.4415L27.3572 3H62.9007M138 83.1183V114.504L113.643 139.098H87.0397" stroke="#F8522E" stroke-width="4.91722"/>
+                    <text id="tlec" x="45" fill="white" y="70" font-size="60px" font-family="'Montserrat', sans-serif" font-weight="bold">8</text>
+                    <text x="20" fill="white" y="100" font-size="10px" font-family="'Montserrat', sans-serif" font-weight="bold">TOTAL LECTURES</text>
+                    </svg>
+            </div>
+        </div>
+        <a onclick="closecluster()" id="closeclusterbtn">
+            <svg width="349" height="90" viewBox="0 0 349 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.1922 3H31.295H163.477H346V33.7964V64.5927L323.808 87H3V57.4967V25.269L25.1922 3Z" stroke="white" stroke-width="1.5"/>
+                <path d="M3 57.4967V25.269L25.1922 3H31.295L113.5 3M346 33.7964V64.5927L323.808 87H245" stroke="#F93308" 
+                stroke-width="5.5"/>
+                <text x="100" fill="white" y="55" font-size="30px" font-family="'Montserrat', sans-serif" font-weight="bold">PROCEED</text>
+            </svg>
+        </a>
+
+
+        <div class="sponsor-section" id="sponsor-section">
+            <div class="sponsor-heading">
+                <h1>OUR SPONSORS</h1>
+            </div>
+            <br><br>
+            <div class="sponsor-logos">
+                <svg width="33%" height="192" viewBox="0 0 191 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M49.244 19H173V56.8069V143.72L145.756 171.228H22V85.9025V46.3383L49.244 19Z" fill="#1B131E" stroke="white" stroke-width="1.5"/>
+                    <path d="M3 84.7451V36.4034L36.3784 3H85.0861M188 112.495V155.389L154.622 189H118.166" stroke="#23A3FF" stroke-width="5.5"/>
+                </svg>
+                <svg width="33%" height="192" viewBox="0 0 191 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M49.244 19H173V56.8069V143.72L145.756 171.228H22V85.9025V46.3383L49.244 19Z" fill="#1B131E" stroke="white" stroke-width="1.5"/>
+                    <path d="M3 84.7451V36.4034L36.3784 3H85.0861M188 112.495V155.389L154.622 189H118.166" stroke="#23A3FF" stroke-width="5.5"/>
+                </svg>
+                <svg width="33%" height="192" viewBox="0 0 191 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M49.244 19H173V56.8069V143.72L145.756 171.228H22V85.9025V46.3383L49.244 19Z" fill="#1B131E" stroke="white" stroke-width="1.5"/>
+                    <path d="M3 84.7451V36.4034L36.3784 3H85.0861M188 112.495V155.389L154.622 189H118.166" stroke="#23A3FF" stroke-width="5.5"/>
+                </svg>
+                <svg width="33%" height="192" viewBox="0 0 191 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M49.244 19H173V56.8069V143.72L145.756 171.228H22V85.9025V46.3383L49.244 19Z" fill="#1B131E" stroke="white" stroke-width="1.5"/>
+                    <path d="M3 84.7451V36.4034L36.3784 3H85.0861M188 112.495V155.389L154.622 189H118.166" stroke="#23A3FF" stroke-width="5.5"/>
+                </svg>
+                <svg width="33%" height="192" viewBox="0 0 191 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M49.244 19H173V56.8069V143.72L145.756 171.228H22V85.9025V46.3383L49.244 19Z" fill="#1B131E" stroke="white" stroke-width="1.5"/>
+                    <path d="M3 84.7451V36.4034L36.3784 3H85.0861M188 112.495V155.389L154.622 189H118.166" stroke="#23A3FF" stroke-width="5.5"/>
+                </svg>
+                <svg width="33%" height="192" viewBox="0 0 191 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M49.244 19H173V56.8069V143.72L145.756 171.228H22V85.9025V46.3383L49.244 19Z" fill="#1B131E" stroke="white" stroke-width="1.5"/>
+                    <path d="M3 84.7451V36.4034L36.3784 3H85.0861M188 112.495V155.389L154.622 189H118.166" stroke="#23A3FF" stroke-width="5.5"/>
+                </svg>
+                <svg width="33%" height="192" viewBox="0 0 191 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M49.244 19H173V56.8069V143.72L145.756 171.228H22V85.9025V46.3383L49.244 19Z" fill="#1B131E" stroke="white" stroke-width="1.5"/>
+                    <path d="M3 84.7451V36.4034L36.3784 3H85.0861M188 112.495V155.389L154.622 189H118.166" stroke="#23A3FF" stroke-width="5.5"/>
+                </svg>
+                <svg width="33%" height="192" viewBox="0 0 191 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M49.244 19H173V56.8069V143.72L145.756 171.228H22V85.9025V46.3383L49.244 19Z" fill="#1B131E" stroke="white" stroke-width="1.5"/>
+                    <path d="M3 84.7451V36.4034L36.3784 3H85.0861M188 112.495V155.389L154.622 189H118.166" stroke="#23A3FF" stroke-width="5.5"/>
+                </svg>
+
+            </div>
+            <br><br>
+            <div class="sponsor-heading">
+                <h1>COMMUNITIES</h1>
+            </div>
+            <br><br>
+            <div class="sponsor-logos">
+                <svg width="33%" height="264" viewBox="0 0 261 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M124.773 261.83L240.623 200.123V69.5176L182.698 35.7593L124.773 2.00098L19.8047 69.5176V200.123L124.773 261.83Z" fill="url(#paint0_linear_833_320)" stroke="white" stroke-width="3.2119"/>
+                    <path d="M64.658 21.6394L5 60.1295V134.586M190.158 244.22L256 209.042V134.586" stroke="#23A3FF" stroke-width="8.02974"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_833_320" x1="130.214" y1="2.00098" x2="130.214" y2="267.087" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#212020"/>
+                    <stop offset="1" stop-color="#141111" stop-opacity="0.3"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+                <svg width="33%" height="264" viewBox="0 0 261 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M124.773 261.83L240.623 200.123V69.5176L182.698 35.7593L124.773 2.00098L19.8047 69.5176V200.123L124.773 261.83Z" fill="url(#paint0_linear_833_320)" stroke="white" stroke-width="3.2119"/>
+                    <path d="M64.658 21.6394L5 60.1295V134.586M190.158 244.22L256 209.042V134.586" stroke="#23A3FF" stroke-width="8.02974"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_833_320" x1="130.214" y1="2.00098" x2="130.214" y2="267.087" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#212020"/>
+                    <stop offset="1" stop-color="#141111" stop-opacity="0.3"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+                <svg width="33%" height="264" viewBox="0 0 261 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M124.773 261.83L240.623 200.123V69.5176L182.698 35.7593L124.773 2.00098L19.8047 69.5176V200.123L124.773 261.83Z" fill="url(#paint0_linear_833_320)" stroke="white" stroke-width="3.2119"/>
+                    <path d="M64.658 21.6394L5 60.1295V134.586M190.158 244.22L256 209.042V134.586" stroke="#23A3FF" stroke-width="8.02974"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_833_320" x1="130.214" y1="2.00098" x2="130.214" y2="267.087" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#212020"/>
+                    <stop offset="1" stop-color="#141111" stop-opacity="0.3"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+                <svg width="33%" height="264" viewBox="0 0 261 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M124.773 261.83L240.623 200.123V69.5176L182.698 35.7593L124.773 2.00098L19.8047 69.5176V200.123L124.773 261.83Z" fill="url(#paint0_linear_833_320)" stroke="white" stroke-width="3.2119"/>
+                    <path d="M64.658 21.6394L5 60.1295V134.586M190.158 244.22L256 209.042V134.586" stroke="#23A3FF" stroke-width="8.02974"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_833_320" x1="130.214" y1="2.00098" x2="130.214" y2="267.087" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#212020"/>
+                    <stop offset="1" stop-color="#141111" stop-opacity="0.3"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+                <svg width="33%" height="264" viewBox="0 0 261 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M124.773 261.83L240.623 200.123V69.5176L182.698 35.7593L124.773 2.00098L19.8047 69.5176V200.123L124.773 261.83Z" fill="url(#paint0_linear_833_320)" stroke="white" stroke-width="3.2119"/>
+                    <path d="M64.658 21.6394L5 60.1295V134.586M190.158 244.22L256 209.042V134.586" stroke="#23A3FF" stroke-width="8.02974"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_833_320" x1="130.214" y1="2.00098" x2="130.214" y2="267.087" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#212020"/>
+                    <stop offset="1" stop-color="#141111" stop-opacity="0.3"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+
+            </div>
+
+        </div>
+                
+        <br><br><br>
+    </div>
+
+    <footer id="footer">
+        <span>@ 2023 Chandigarh University</span>
+        <a href=""><img class="footerimg" src="/linkedinlogo.png"></a>
+        <a href=""><img class="footerimg" src="/instalogo.png"></a>
+    </footer>
+    
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="index.js"></script>
+    <script src="particlesmain.js"></script>
+</body>
+</html>
