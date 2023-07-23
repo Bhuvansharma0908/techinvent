@@ -1,9 +1,9 @@
 const clusterdetails = {
-    'engineering': { 'x': 260, 'y': 330, 'n1': 8, 'n2': 15, 'n3': 8, 'pathid': 'engpath', 'heading': 'ENGINEERING', 'backimg': 'back.png' },
-    'liberal-arts': { 'x': 260, 'y': 330, 'n1': 10, 'n2': 15, 'n3': 25, 'pathid': 'lapath', 'heading': 'LIBERAL ARTS', 'backimg': 'liberal.png' },
-    'allied-health': { 'x': 250, 'y': 330, 'n1': 7, 'n2': 18, 'n3': 8, 'pathid': 'ahpath', 'heading': 'ALLIED HEALTH', 'backimg': 'health.png' },
-    'basic-science': { 'x': 250, 'y': 330, 'n1': 5, 'n2': 17, 'n3': 8, 'pathid': 'bspath', 'heading': 'BASIC SCIENCE', 'backimg': 'golden.png' },
-    'management': { 'x': 260, 'y': 330, 'n1': 7, 'n2': 9, 'n3': 13, 'pathid': 'manpath', 'heading': 'MANAGEMENT', 'backimg': 'voilet.png' }
+    'engineering': { 'x': 260, 'y': 330, 'n1': 8, 'n2': 15, 'n3': 8, 'pathid': 'engpath', 'heading': 'ENGINEERING', 'backimg': 'back.webp' },
+    'liberal-arts': { 'x': 260, 'y': 330, 'n1': 10, 'n2': 15, 'n3': 25, 'pathid': 'lapath', 'heading': 'LIBERAL ARTS', 'backimg': 'liberal.webp' },
+    'allied-health': { 'x': 250, 'y': 330, 'n1': 7, 'n2': 18, 'n3': 8, 'pathid': 'ahpath', 'heading': 'ALLIED HEALTH', 'backimg': 'health.webp' },
+    'basic-science': { 'x': 250, 'y': 330, 'n1': 5, 'n2': 17, 'n3': 8, 'pathid': 'bspath', 'heading': 'BASIC SCIENCE', 'backimg': 'golden.webp' },
+    'management': { 'x': 260, 'y': 330, 'n1': 7, 'n2': 9, 'n3': 13, 'pathid': 'manpath', 'heading': 'MANAGEMENT', 'backimg': 'voilet.webp' }
 };
 var currentcl = 'engineering';
 var myTimeout;
