@@ -1,14 +1,14 @@
-
-.sponsor-section{
+.sponsor-section {
     width: 100%;
     height: 80%;
     position: fixed;
     overflow-y: scroll;
     overflow-x: hidden;
     display: none;
+    opacity: 0%;
 }
 
-.sponsor-heading{
+.sponsor-heading {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
@@ -16,13 +16,13 @@
     font-size: 20px;
 }
 
-.sponsor-logos{
+.sponsor-logos {
     width: 60%;
     /* height: 100%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     /* gap: 5px; */
     align-items: center;
     margin-left: auto;
@@ -33,19 +33,17 @@
     padding-right: 30px; */
 }
 
-.sponsor-logos svg{
+.sponsor-logos svg {
     margin-bottom: 60px;
 }
 
-
-@media screen and (max-width:600px){
-
-    .sponsor-logos{
+@media screen and (max-width:600px) {
+    .sponsor-logos {
         width: 80%;
     }
-    .sponsor-logos svg{
+    .sponsor-logos svg {
         margin-bottom: 0px;
-        width:40%;
+        width: 40%;
         height: 180px;
     }
 }

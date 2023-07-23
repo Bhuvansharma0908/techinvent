@@ -1,13 +1,15 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Invent | Chandigarh University</title>
-    <link type="text/css" rel="stylesheet" href="/techinvent.github.io/index.css">
-    <link type="text/css" rel="stylesheet" href="/techinvent.github.io/cluster.css">
-    <link type="text/css" rel="stylesheet" href="/techinvent.github.io/about.css">
-    <link type="text/css" rel="stylesheet" href="/techinvent.github.io/sponsor.css">
+    <link type="text/css" rel="stylesheet" href="/index.css">
+    <link type="text/css" rel="stylesheet" href="/cluster.css">
+    <link type="text/css" rel="stylesheet" href="/about.css">
+    <link type="text/css" rel="stylesheet" href="/sponsor.css">
 </head>
+
 <body class="main-body" id="main-body">
     <div id="particles-js"></div>
     <div id="mySidebar" class="sidebar">
@@ -30,13 +32,13 @@
             <span>LECTURES</span>
         </div>
         <div class="nav-bar-2">
-            <img src="/techinvent.github.io/cu logo.png">
-            <img src="/techinvent.github.io/Tech logo.png">
+            <img src="/cu logo.png" onclick="opencuweb()">
+            <img src="/Tech logo.png" onclick="closecluster()">
             <button onclick="opensidebar()" type="button" class="opensidebar" id="opensidebar">&#9776;</button>
         </div>
         <div class="nav-bar-3">
-            <a onclick="opensponsor()"><span>SPONSORS</span></a>
-            <a onclick="openaboutus()"><span>ABOUT US</span></a>
+            <span onclick="opensponsor()">SPONSORS</span>
+            <span onclick="openaboutus()">ABOUT US</span>
             <span>ORGANIZING TEAM</span>
             <span>CONTACT US</span>
         </div>
@@ -75,7 +77,7 @@
             <br>
             <p>
                 Vasudhaiva Kutumbakam<br>One Earth - One Family - One Future
-            </p>                
+            </p>
         </div>
         <div class="about-section" id="about-section">
             <svg width="100%" height="667" class="about-frame-mobile" viewBox="0 0 100% 667" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +88,7 @@
                     <text x="25" fill="white" y="25" font-size="5px">TO EXPLORE CLUSTER</text>
                 </g>
             </svg>
-                
+
             <svg width="100%" height="755" class="about-frame-wide" viewBox="0 0 1400 755" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g transform="scale(1.1,0.8)">
                 <path d="M511.367 1H311.94C308.722 1 305.818 2.92712 304.568 5.89144L296.043 26.1086C294.792 29.0729 291.888 31 288.671 31H11C6.58172 31 3 34.5817 3 39L3 707.899C3 711.502 5.40864 714.661 8.88331 715.614L147.752 753.715C148.442 753.904 149.154 754 149.869 754H289.794C292.742 754 295.452 752.379 296.845 749.78L313.767 718.22C315.16 715.621 317.869 714 320.817 714H520.157" stroke="white" stroke-width="2"/>
@@ -101,15 +103,16 @@
             </g>
             </a>
                 </svg>
-                <div class="about-heading">ABOUT<BR>TECH INVENT</div>
-                <div class="about-section-content">
+            <div class="about-heading">ABOUT
+                <BR>TECH INVENT</div>
+            <div class="about-section-content">
                 <div class="about-content-left">
                     <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta quasi ab expedita. Illum, aperiam quasi fuga mollitia veritatis reiciendis fugiat ex labore corporis? Ad non beatae corporis voluptates ut?<br><br>
-                    <a href="#">
-                        <svg width="194" height="77" style="margin-left: auto;margin-right:auto;" viewBox="0 0 194 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="#" id="aboutback" onclick="closeabout()">
+                        <svg width="194" height="77" style="margin-left: auto;margin-right:auto;" viewBox="0 0 150 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21.7091 3H26.8541H138.29H191V28.9629V54.9257L172.291 73.8161H3V48.9434V21.7738L21.7091 3Z" stroke="white" stroke-width="1.26457"/>
                         <path d="M3 48.9434V21.7738L21.7091 3H26.8541L96.157 3M191 28.9629V54.9257L172.291 73.8161H105.852" stroke="#F93308" stroke-width="4.63677"/>
-                        <text x="23" fill="white" y="45" font-size="X-large" font-weight="bold">KNOW MORE</text>
+                        <text x="23" fill="white" y="45" font-size="X-large" font-weight="bold">BACK</text>
                         </svg>
                     </a>
                 </div>
@@ -120,57 +123,58 @@
         </div>
 
         <div class="cluster-map" id="cluster-map">
+            <h2 id="phonehead">EXPLORE OUR <br>CLUSTERS</h2>
             <div class="cluster-map-1">
                 <!-- <svg width="300" height="49"  viewBox="0 0 157 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M156.199 0.80102H70.4898H16.3522L0.801025 16.3522V31.709L16.3522 47.2602H156.199V0.80102Z" stroke="white" stroke-width="4"/>
                     <text x="40" fill="white" y="30" font-size="larger" font-weight="bold">&lt;&lt; BACK</text>
                     </svg> -->
-                    <p class="cmpara">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis est molestias dolorem ab officiis sunt repellat dignissimos, beatae animi asperiores.<br>
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non at quia aspernatur eveniet? Fugiat quam odit veniam eveniet similique deserunt, eum reiciendis explicabo ipsa error dignissimos fuga sint porro.
-                    </p>
+                <p class="cmpara">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis est molestias dolorem ab officiis sunt repellat dignissimos, beatae animi asperiores.<br>
+                    <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non at quia aspernatur eveniet? Fugiat quam odit veniam eveniet similique deserunt, eum reiciendis explicabo ipsa error dignissimos fuga sint porro.
+                </p>
             </div>
             <div class="cluster-map-2">
                 <svg width="700" height="600" viewBox="0 0 747 647" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.6" d="M340.767 8.04881C358.384 -1.60953 379.685 -1.72532 397.406 7.74091L714.912 177.349C740.136 190.823 752.206 220.337 743.653 247.626L631.704 604.796C623.926 629.611 600.934 646.5 574.928 646.5H380.564H164.027C137.57 646.5 114.291 629.03 106.897 603.627L2.93551 246.425C-4.86012 219.64 6.99985 191.035 31.4612 177.624L340.767 8.04881Z" stroke="white" stroke-opacity="0.3"/>
                     <path opacity="0.6" d="M509 555H246M127 317 193 503M130 209 330 92M551 503 621 309M402 92 598 207" stroke="white"/>
+
                 <a   onmouseover="currentcluster('engineering')">
                     <g transform="translate(327,20)">
                     <path id="engpath" d="M34 83.8453C37.7128 85.9889 42.2872 85.9889 46 83.8453L71.507 69.1188C75.2199 66.9752 77.507 63.0137 77.507 58.7265V29.2735C77.507 24.9863 75.2199 21.0248 71.507 18.8812L46 4.1547C42.2872 2.01111 37.7128 2.01111 34 4.15469L8.49296 18.8812C4.78014 21.0248 2.49296 24.9863 2.49296 29.2735V58.7265C2.49296 63.0137 4.78014 66.9752 8.49296 69.1188L34 83.8453Z" stroke="url(#paint0_linear_833_391)" stroke-width="4"/>
                     <text x="-25" fill="white" y="110" font-size="large" font-family="'Montserrat', sans-serif" font-weight="bold">ENGINEERING</text>
-                    <image href="/techinvent.github.io/prototype 1.png" x="20" y="20" width="40px" height="40px" />
+                    <image href="/prototype 1.png" x="20" y="20" width="40px" height="40px" />
                     </g>
                 </a>
                 <a   onmouseover="currentcluster('liberal-arts')">
                   <g transform="translate(70,200)">
                     <path id="lapath" d="M34 83.8453C37.7128 85.9889 42.2872 85.9889 46 83.8453L71.507 69.1188C75.2199 66.9752 77.507 63.0137 77.507 58.7265V29.2735C77.507 24.9863 75.2199 21.0248 71.507 18.8812L46 4.1547C42.2872 2.01111 37.7128 2.01111 34 4.15469L8.49296 18.8812C4.78014 21.0248 2.49296 24.9863 2.49296 29.2735V58.7265C2.49296 63.0137 4.78014 66.9752 8.49296 69.1188L34 83.8453Z" stroke="url(#paint0_linear_833_391)" stroke-width="4"/>
                     <text  x="-25" fill="white" y="110" font-size="large" font-family="'Montserrat', sans-serif" font-weight="bold">LIBERAL ARTS</text>
-                    <image href="/techinvent.github.io/idea 1.png" x="20" y="20" width="40px" height="40px" />
+                    <image href="/idea 1.png" x="20" y="20" width="40px" height="40px" />
                   </g>
                 </a>
                 <a   onmouseover="currentcluster('allied-health')">
                   <g transform="translate(590,200)">
                     <path id="ahpath" d="M34 83.8453C37.7128 85.9889 42.2872 85.9889 46 83.8453L71.507 69.1188C75.2199 66.9752 77.507 63.0137 77.507 58.7265V29.2735C77.507 24.9863 75.2199 21.0248 71.507 18.8812L46 4.1547C42.2872 2.01111 37.7128 2.01111 34 4.15469L8.49296 18.8812C4.78014 21.0248 2.49296 24.9863 2.49296 29.2735V58.7265C2.49296 63.0137 4.78014 66.9752 8.49296 69.1188L34 83.8453Z" stroke="url(#paint0_linear_833_391)" stroke-width="4"/>
                     <text  x="-25" fill="white" y="110" font-size="large" font-family="'Montserrat', sans-serif" font-weight="bold">ALLIED HEALTH</text>
-                    <image href="/techinvent.github.io/healthcare 1.png" x="20" y="20" width="40px" height="40px" />
+                    <image href="/healthcare 1.png" x="20" y="20" width="40px" height="40px" />
                   </g>
                 </a>
                 <a   onmouseover="currentcluster('basic-science')">
                   <g transform="translate(515,510)">
                     <path id="bspath" d="M34 83.8453C37.7128 85.9889 42.2872 85.9889 46 83.8453L71.507 69.1188C75.2199 66.9752 77.507 63.0137 77.507 58.7265V29.2735C77.507 24.9863 75.2199 21.0248 71.507 18.8812L46 4.1547C42.2872 2.01111 37.7128 2.01111 34 4.15469L8.49296 18.8812C4.78014 21.0248 2.49296 24.9863 2.49296 29.2735V58.7265C2.49296 63.0137 4.78014 66.9752 8.49296 69.1188L34 83.8453Z" stroke="url(#paint0_linear_833_391)" stroke-width="4"/>
                     <text  x="-35" fill="white" y="110" font-size="large" font-family="'Montserrat', sans-serif" font-weight="bold">BASIC SCIENCE</text>
-                    <image href="/techinvent.github.io/search 1.png" x="20" y="20" width="40px" height="40px" />
+                    <image href="/search 1.png" x="20" y="20" width="40px" height="40px" />
                   </g>
                 </a>
                 <a   onmouseover="currentcluster('management')">
                   <g transform="translate(150,510)">
                     <path id="manpath" d="M34 83.8453C37.7128 85.9889 42.2872 85.9889 46 83.8453L71.507 69.1188C75.2199 66.9752 77.507 63.0137 77.507 58.7265V29.2735C77.507 24.9863 75.2199 21.0248 71.507 18.8812L46 4.1547C42.2872 2.01111 37.7128 2.01111 34 4.15469L8.49296 18.8812C4.78014 21.0248 2.49296 24.9863 2.49296 29.2735V58.7265C2.49296 63.0137 4.78014 66.9752 8.49296 69.1188L34 83.8453Z" stroke="url(#paint0_linear_833_391)" stroke-width="4"/>
                     <text  x="-25" fill="white" y="110" font-size="large" font-family="'Montserrat', sans-serif" font-weight="bold">MANAGEMENT</text>
-                    <image href="/techinvent.github.io/team-management 1.png" x="20" y="20" width="40px" height="40px" />
+                    <image href="/team-management 1.png" x="20" y="20" width="40px" height="40px" />
                   </g>
                 </a>
-                <text id="clusterheading" x="250" fill="white" y="310" font-size="40px" font-family="'Montserrat', sans-serif" font-weight="bold">Engineering</text>
+                <text id="clusterheading" x="270" fill="white" y="330" font-size="40px" font-family="'Montserrat', sans-serif" font-weight="bold">Engineering</text>
                     
                     <defs>
                         <linearGradient id="paint0_linear_833_392" x1="67" y1="3" x2="5.5" y2="96.5" gradientUnits="userSpaceOnUse">
@@ -187,9 +191,9 @@
                         </linearGradient>
                     </defs>
                   </svg>
-                  
-                
-                
+
+
+
 
             </div>
             <div class="cluster-map-3">
@@ -212,15 +216,17 @@
                     <text x="20" fill="white" y="100" font-size="10px" font-family="'Montserrat', sans-serif" font-weight="bold">TOTAL LECTURES</text>
                     </svg>
             </div>
-        </div>
-        <a onclick="closecluster()" id="closeclusterbtn">
-            <svg width="349" height="90" viewBox="0 0 349 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </div><br>
+        <div>
+            <a onclick="closecluster()" id="closeclusterbtn">
+                <svg width="349" height="90" viewBox="0 0 349 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M25.1922 3H31.295H163.477H346V33.7964V64.5927L323.808 87H3V57.4967V25.269L25.1922 3Z" stroke="white" stroke-width="1.5"/>
                 <path d="M3 57.4967V25.269L25.1922 3H31.295L113.5 3M346 33.7964V64.5927L323.808 87H245" stroke="#F93308" 
                 stroke-width="5.5"/>
                 <text x="100" fill="white" y="55" font-size="30px" font-family="'Montserrat', sans-serif" font-weight="bold">PROCEED</text>
             </svg>
-        </a>
+            </a>
+        </div>
 
 
         <div class="sponsor-section" id="sponsor-section">
@@ -323,20 +329,33 @@
             </div>
 
         </div>
-                
+
         <br><br><br>
     </div>
 
     <footer id="footer">
         <span>@ 2023 Chandigarh University</span>
-        <a href=""><img class="footerimg" src="/techinvent.github.io/linkedinlogo.png"></a>
-        <a href=""><img class="footerimg" src="/techinvent.github.io/instalogo.png"></a>
+        <img class="footerimg" src="/linkedinlogo.png" onclick="culinkedin()">
+        <img class="footerimg" src="/instalogo.png" onclick="cuinsta()">
     </footer>
-    
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        function opencuweb() {
+            window.open("https://www.cuchd.in/", "_blank");
+        }
+
+        function cuinsta() {
+            window.open("https://www.instagram.com/chandigarhuniversity/?hl=en", "_blank");
+        }
+
+        function culinkedin() {
+            window.open("https://www.linkedin.com/school/chandigarh-university/mycompany/verification/", "_blank");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- stats.js lib -->
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="index.js"></script>
     <script src="particlesmain.js"></script>
 </body>
+
 </html>

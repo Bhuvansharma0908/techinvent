@@ -1,16 +1,17 @@
-.about-section{
-    margin: 0%;
+.about-section {
+    top: 25%;
     width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+    position: absolute;
     display: none;
+    opacity: 0%;
 }
 
-.about-section-content{
+.about-section-content {
     color: white;
-    width:60%;
+    width: 60%;
     position: absolute;
     height: 60%;
     top: 10%;
@@ -20,11 +21,9 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    
-    
 }
 
-.about-content-left{
+.about-content-left {
     width: 30%;
     height: 100%;
     line-height: 30px;
@@ -36,7 +35,8 @@
     text-align: left;
     /* padding: 40px; */
 }
-.about-content-right{
+
+.about-content-right {
     width: 5%;
     height: 100%;
     line-height: 30px;
@@ -45,55 +45,75 @@
     /* text-align: flex-end; */
 }
 
-.about-heading{
+.about-heading {
     color: #FFFFFF;
     position: absolute;
     /* z-index: 1; */
     top: -4%;
-    left:43%;
+    left: 43%;
     font-size: xx-large;
 }
 
-
-.about-frame-mobile{
+.about-frame-mobile {
     display: none;
 }
 
-
-@media screen and (max-width:600px){
-    .about-frame-mobile{
-        display: block;
+@media screen and (max-width:600px) {
+    .about-frame-mobile {
+        display: none;
+        width: 100vw;
     }
-    .about-frame-wide{
+    .about-frame-wide {
         display: none;
     }
-    .about-heading{
+    .about-heading {
         font-size: medium;
     }
-    .about-section-content{
+    .about-section-content {
         flex-direction: column;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
-        /* margin-top: 100px; */
+        position: absolute;
+        top: 30vh;
     }
-    
-    .about-content-left{
+    .about-content-left {
         width: 100%;
         font-size: medium;
         text-align: justify;
         justify-content: center;
     }
-
-    .about-content-right{
+    .about-content-right {
         width: 100%;
         padding: 0%;
-        margin-top: 50px;
+        margin-top: 100px;
     }
-
-    .about-content-right iframe{
+    .about-content-right iframe {
+        margin-top: 90px;
         width: 90%;
         height: auto;
+    }
+    #aboutback svg {
+        position: absolute;
+        top: -33vh;
+        left: -10vw;
+        width: 20vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-section {
+        top: 15%;
+        opacity: 0%;
+    }
+    .about-heading {
+        color: #FFFFFF;
+        position: absolute;
+        /* z-index: 1; */
+        top: -50%;
+        left: 25%;
+        font-size: xx-large;
     }
 }

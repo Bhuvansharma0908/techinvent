@@ -1,8 +1,6 @@
-
-.cluster-map{
+.cluster-map {
     width: 100%;
-    height: 80%;
-    display: flex;
+    height: 90%;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: none;
@@ -10,9 +8,10 @@
     margin-left: auto;
     margin-right: auto;
     display: none;
+    opacity: 0%;
 }
 
-.cluster-map-1{
+.cluster-map-1 {
     width: 20%;
     height: 100%;
     display: flex;
@@ -25,7 +24,7 @@
     padding-left: 20px;
 }
 
-.cmpara{
+.cmpara {
     width: 100%;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
@@ -40,7 +39,7 @@
     padding-left: 50px;
 }
 
-.cluster-map-2{
+.cluster-map-2 {
     /* padding-left: 100px; */
     width: 60%;
     height: 100%;
@@ -50,7 +49,7 @@
     margin-right: auto;
 }
 
-.cluster-map-3{
+.cluster-map-3 {
     width: 20%;
     height: 100%;
     display: flex;
@@ -64,28 +63,41 @@
     padding-top: 0%;
 }
 
-#engpath, #lapath, #ahpath, #manpath, #bspath{
+#engpath,
+#lapath,
+#ahpath,
+#manpath,
+#bspath {
     transition: ease 0.5s;
 }
 
-
-#closeclusterbtn{
-    width:100%;
+#closeclusterbtn {
+    position: relative;
+    width: 100%;
     text-align: center;
+    display: none;
+    opacity: 0%;
+}
+
+#clusterheading {
+    font-size: 30px;
+}
+
+#phonehead {
     display: none;
 }
 
-@media screen and (max-width:600px){
-    .cluster-map{
+@media screen and (max-width:600px) {
+    .cluster-map {
         width: 100%;
         text-align: center;
     }
-    .cluster-map-1{
-        display: table-row-group;
+    .cluster-map-1 {
+        display: none;
         width: 90%;
         padding-left: 0px;
     }
-    .cmpara{
+    .cmpara {
         width: 90%;
         color: #FFFFFF;
         font-family: 'Montserrat', sans-serif;
@@ -99,30 +111,44 @@
         padding-left: 0px;
         margin-top: 0px;
     }
-    .cluster-map-2{
-        display: table-header-group;
-        width:90%;
-        padding-left: 0px;
-    }
-
-    .cluster-map-2 svg{
-        width: 80%;
-        height: max-content;
-    }
-
-    .cluster-map-3{
-        display: table-footer-group;
+    .cluster-map-2 {
+        position: absolute;
+        top: 25%;
         width: 90%;
         padding-left: 0px;
     }
-
-    .cluster-map-3 svg{
+    .cluster-map-2 svg {
+        width: 100vw;
+        height: max-content;
+    }
+    .cluster-map-3 {
+        position: absolute;
+        top: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 20vh;
+        position: absolute;
+        width: 100%;
+        padding-left: 0px;
+    }
+    .cluster-map-3 svg {
         width: 100;
         margin: 10px;
     }
-
-    #closeclusterbtn svg{
+    #closeclusterbtn {
+        position: absolute;
+        top: 95%;
+    }
+    #closeclusterbtn svg {
         width: 50%;
     }
-    
+    #phonehead {
+        display: block;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
 }
