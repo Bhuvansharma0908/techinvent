@@ -76,6 +76,7 @@
     width: 100%;
     text-align: center;
     display: none;
+<<<<<<< HEAD
     opacity: 0%;
 }
 
@@ -85,6 +86,13 @@
 
 #phonehead {
     display: none;
+=======
+    border: 2px solid red;
+    position: absolute:
+    top:10%;
+    left : 10%;
+    
+>>>>>>> c40545543cae6a62f7ce2b1edd37b415e3fe7821
 }
 
 @media screen and (max-width:600px) {
