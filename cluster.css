@@ -1,0 +1,160 @@
+.cluster-map {
+    width: 100%;
+    height: 90%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: none;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    opacity: 0%;
+}
+
+.cluster-map-1 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: none;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+.cmpara {
+    width: 100%;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: 0.96px;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+}
+
+.cluster-map-2 {
+    /* padding-left: 100px; */
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cluster-map-3 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+#engpath,
+#lapath,
+#ahpath,
+#manpath,
+#bspath {
+    transition: ease 0.5s;
+}
+
+#closeclusterbtn {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: none;
+    opacity: 0%;
+}
+
+#clusterheading {
+    font-size: 30px;
+}
+
+#phonehead {
+    display: none;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    top: 5%;
+}
+
+@media screen and (max-width:600px) {
+    .cluster-map {
+        width: 100%;
+        text-align: center;
+    }
+    .cluster-map-1 {
+        display: none;
+        width: 90%;
+        padding-left: 0px;
+    }
+    .cmpara {
+        width: 90%;
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        line-height: 20px;
+        letter-spacing: 0.96px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+    .cluster-map-2 {
+        position: absolute;
+        top: 25%;
+        width: 90%;
+        padding-left: 0px;
+    }
+    .cluster-map-2 svg {
+        width: 100vw;
+        height: max-content;
+    }
+    .cluster-map-3 {
+        position: absolute;
+        top: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 20vh;
+        position: absolute;
+        width: 100%;
+        padding-left: 0px;
+    }
+    .cluster-map-3 svg {
+        width: 100;
+        margin: 10px;
+    }
+    #closeclusterbtn {
+        position: absolute;
+        top: 95%;
+    }
+    #closeclusterbtn svg {
+        width: 50%;
+    }
+    #phonehead {
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
