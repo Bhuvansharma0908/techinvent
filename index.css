@@ -11,9 +11,10 @@ body {
     background-color: #13161E;
     padding: 0%;
     margin: 0%;
-    background-position: top;
+    /* background-position: top; */
     transition: ease 0.5s;
     overflow-y: scroll;
+    height: 100vh;
 }
 
 #home-content {
@@ -279,7 +280,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0%;
-    padding-top: 70px;
+    padding-top: 50px;
     /* padding-left: 30px;
     padding-right: 30px; */
     /* display: none; */
