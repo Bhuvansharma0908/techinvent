@@ -14,6 +14,7 @@ var footer = document.getElementById('footer');
 var closeclusterbtn = document.getElementById('closeclusterbtn');
 var about_section = document.getElementById('about-section');
 var nav = document.getElementById('nav-bar');
+var hint = 0;
 
 function currentcluster(cluster) {
     // window.location.hash = cluster;
