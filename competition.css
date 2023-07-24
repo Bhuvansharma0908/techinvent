@@ -1,0 +1,138 @@
+.events-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* padding-top: 20%; */
+    height: 90%;
+    width: 97%;
+    padding-left: 3%;
+}
+
+.events-box {
+    /* padding-top: 20%; */
+    height: 90%;
+    width: 90%;
+    padding: 5%;
+    /* padding-left: 3%; */
+    background-color: #020612;
+    box-shadow: 0px 0px 10px 0px #000000;
+    padding-top: 1%;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: left;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.event {
+    width: 21%;
+    border: none;
+    background-color: #1F1B37;
+    height: 45%;
+    margin: 2%;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.event-up-div {
+    width: 90%;
+    padding-left: 5%;
+    height: 30%;
+}
+
+.event-up-div h4 {
+    color: #EC612A;
+    width: 100%;
+    padding: 2%;
+    margin: 2%;
+}
+
+.event-up-div h3 {
+    color: #fefefe;
+    width: 100%;
+    padding: 2%;
+    margin: 2%;
+}
+
+.event-down-div {
+    width: 92%;
+    /* padding: 5%; */
+    height: 62%;
+    background-color: #fefefe;
+    border-radius: 5px;
+    margin: 4%;
+    transition: all 0.5s ease-in-out;
+}
+
+.event-down-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    border-radius: 5px;
+    margin: 4%;
+    transition: all 0.5s ease-in-out;
+}
+
+.event-down-div p {
+    color: #fefefe;
+    width: 90%;
+    padding: 5%;
+    display: none;
+    opacity: 0%;
+    transition: all 0.5s ease-in-out;
+}
+
+.event:hover>.event-down-div {
+    background-color: #1F1B37;
+}
+
+.event:hover>.event-down-div>p {
+    display: block;
+    opacity: 100%;
+}
+
+.event:hover>.event-down-div>img {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .svg2 {
+        width: 60%;
+        height: 15%;
+    }
+    .svg1,
+    .svg3 {
+        width: 40%;
+        height: 15%;
+    }
+    .events-box {
+        height: 50%;
+        overflow-x: scroll;
+    }
+    .events-list {
+        height: 80%;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        width: 300vw;
+    }
+    .event {
+        width: 100%;
+        height: 100%;
+    }
+    .event-up-div h4 {
+        font-size: 0.6rem;
+    }
+    .event-up-div h3 {
+        font-size: 0.8rem;
+    }
+    .event-down-div p {
+        font-size: 0.7rem;
+    }
+}

@@ -26,7 +26,7 @@
     </div>
     <div class="nav-bar" id="nav-bar">
         <div class="nav-bar-1">
-            <span>COMPETETIONS</span>
+            <span onclick="prevent()">COMPETETIONS</span>
             <span>WORKSHOPS</span>
             <span>EXHIBITIONS</span>
             <span>LECTURES</span>
@@ -351,6 +351,10 @@
 
         function culinkedin() {
             window.open("https://www.linkedin.com/school/chandigarh-university/mycompany/verification/", "_blank");
+        }
+
+        function prevent(e) {
+            window.open("competitions.html", "_blank");
         }
     </script>
 
