@@ -17,7 +17,7 @@
 }
 
 .sponsor-logos {
-    width: 60%;
+    width: 80%;
     /* height: 100%; */
     display: flex;
     flex-direction: row;
@@ -34,7 +34,7 @@
 }
 
 .sponsor-logos svg {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width:600px) {

@@ -132,6 +132,7 @@ body {
         overflow-x: scroll;
     }
     .events-list {
+        overflow-y: hidden;
         height: 80%;
         overflow-x: scroll;
         flex-wrap: nowrap;
