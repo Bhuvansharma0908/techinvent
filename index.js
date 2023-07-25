@@ -172,3 +172,19 @@ function closeabout() {
 
     closecluster();
 }
+
+function competitonpage() {
+    window.open("competitions.html", "_blank");
+}
+
+function lecturepage() {
+    window.open("lecture.html", "_blank");
+}
+
+function workshoppage() {
+    window.open("workshop.html", "_blank");
+}
+
+function exibitionpage() {
+    window.open("exibition.html", "_blank");
+}
