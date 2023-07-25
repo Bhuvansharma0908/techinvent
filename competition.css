@@ -1,3 +1,18 @@
+body {
+    background-image: url('/back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #13161E;
+    padding: 0%;
+    margin: 0%;
+    /* background-position: top; */
+    transition: ease 0.5s;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
 .events-section {
     display: flex;
     flex-direction: column;
@@ -100,6 +115,10 @@
 
 .event:hover>.event-down-div>img {
     display: none;
+}
+
+.svg1 {
+    border: 2px solid red;
 }
 
 @media screen and (max-width:700px) {

@@ -5,6 +5,11 @@ const clusterdetails = {
     'basic-science': { 'x': 250, 'y': 330, 'n1': 5, 'n2': 17, 'n3': 8, 'pathid': 'bspath', 'heading': 'BASIC SCIENCE', 'backimg': 'golden.webp' },
     'management': { 'x': 260, 'y': 330, 'n1': 7, 'n2': 9, 'n3': 13, 'pathid': 'manpath', 'heading': 'MANAGEMENT', 'backimg': 'voilet.webp' }
 };
+window.onload = function() {
+    if (localStorage.getItem("page") == "main-content") {
+        redirectmain();
+    }
+}
 var currentcl = 'engineering';
 var myTimeout;
 var currentdisplay = '';
@@ -14,6 +19,7 @@ var footer = document.getElementById('footer');
 var closeclusterbtn = document.getElementById('closeclusterbtn');
 var about_section = document.getElementById('about-section');
 var nav = document.getElementById('nav-bar');
+var start_section = document.getElementById('start-section');
 var hint = 0;
 
 function currentcluster(cluster) {
@@ -55,9 +61,6 @@ var cluster_map = document.getElementById('cluster-map');
 var closeclusterbtn = document.getElementById('closeclusterbtn');
 
 function entermultiverse() {
-
-    var start_section = document.getElementById('start-section');
-
 
     document.body.style.overflowY = "scroll";
     start_section.style.display = 'none';
@@ -107,10 +110,29 @@ function closecluster() {
     home_content.style.display = 'flex';
     currentdisplay = 'home-content';
     closeclusterbtn.style.display = 'none';
-
+    localStorage.setItem("page", "main-content")
     myTimeout = setTimeout(animate, 1500);
 }
 
+function redirectmain() {
+
+
+    // document.getElementById('main-body').style.backgroundImage = 'url(back.png)';
+    // document.getElementById(currentdisplay).style.display = "none";
+    // document.getElementById(currentdisplay).style.opacity = "0%";
+    start_section.style.display = 'none';
+    cluster_map.style.display = 'none';
+    nav_bar.style.display = 'flex';
+    if (screen.width > 600) {
+        footer.style.display = 'flex';
+        console.log(screen.width);
+    }
+
+    home_content.style.display = 'flex';
+    currentdisplay = 'home-content';
+    closeclusterbtn.style.display = 'none';
+    myTimeout = setTimeout(animate, 1500);
+}
 
 function openaboutus() {
 

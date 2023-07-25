@@ -17,21 +17,21 @@
     <div id="mySidebar" class="sidebar">
         <a class="sidebarlinks" href="javascript:void(0)" id="closebtn" onclick="closesidebar()">&times;</a>
         <br><br>
-        <a class="sidebarlinks">COMPETETIONS</a>
+        <a onclick="competitonpage()" class="sidebarlinks">COMPETETIONS</a>
         <a class="sidebarlinks">WORKSHOPS</a>
         <a class="sidebarlinks">EXHIBITIONS</a>
         <a class="sidebarlinks">LECTURES</a>
-        <a class="sidebarlinks" onclick="opensponsor()">SPONSORS</a>
-        <a class="sidebarlinks" onclick="openaboutus()">ABOUT US</a>
-        <a class="sidebarlinks">ORGANIZING TEAM</a>
+        <!-- <a class="sidebarlinks" onclick="opensponsor()">SPONSORS</a>
+        <a class="sidebarlinks" onclick="openaboutus()">ABOUT US</a> -->
+        <!-- <a class="sidebarlinks">ORGANIZING TEAM</a> -->
         <a class="sidebarlinks">CONTACT US</a>
     </div>
     <div class="nav-bar" style="display: flex;opacity: 1;" id="nav-bar">
         <div class="nav-bar-1">
-            <span>COMPETETIONS</span>
+            <span onclick="competitonpage()">COMPETETIONS</span>
             <span>WORKSHOPS</span>
             <span>EXHIBITIONS</span>
-            <span>LECTURES</span>
+
         </div>
         <div class="nav-bar-2">
             <img src="/cu logo.png" onclick="opencuweb()">
@@ -39,8 +39,9 @@
             <button onclick="opensidebar()" type="button" class="opensidebar" id="opensidebar">&#9776;</button>
         </div>
         <div class="nav-bar-3">
-            <span onclick="opensponsor()">SPONSORS</span>
-            <span onclick="openaboutus()">ABOUT US</span>
+            <!-- <span onclick="opensponsor()">SPONSORS</span>
+            <span onclick="openaboutus()">ABOUT US</span> -->
+            <span>LECTURES</span>
             <span>ORGANIZING TEAM</span>
             <span>CONTACT US</span>
         </div>
@@ -151,7 +152,7 @@
         </div>
     </div>
 
-    <footer id="footer">
+    <footer id="footer" style="display: flex;">
         <span>@ 2023 Chandigarh University</span>
         <img class="footerimg" src="/linkedinlogo.png" onclick="culinkedin()">
         <img class="footerimg" src="/instalogo.png" onclick="cuinsta()">
@@ -176,12 +177,37 @@
     <script src="particlesmain.js"></script>
 
     <script>
+        let x1 = ['url(back.webp)', 'url(health.webp)', 'url(voilet.webp)', 'url(liberal.webp)', 'url(golden.webp)'];
+
         function flipcard(div) {
             var image = div.children[1].children[0];
             var text = div.children[1].children[1];
             image.style.display = "none";
             text.style.display = "block";
 
+        }
+
+        function competitonpage() {
+            window.open("competitions.html", "_blank");
+        }
+        var myIndex = 0;
+        carousel();
+        var x2 = ['firstpage', 'secondpage', 'third', 'fourth', 'fifth'];
+
+        function carousel() {
+
+            var i;
+            for (i = 0; i < 5; i++) {
+
+            }
+            myIndex++;
+            if (myIndex > 5) {
+                myIndex = 1
+            }
+            console.log(x1);
+            document.body.style.backgroundImage = x1[myIndex - 1];
+
+            setTimeout(carousel, 3000); // Change image every 2 seconds
         }
     </script>
 </body>
