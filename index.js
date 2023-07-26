@@ -1,9 +1,9 @@
 const clusterdetails = {
-    'engineering': { 'x': 260, 'y': 300, 'n1': 8, 'n2': 15, 'n3': 8, 'pathid': 'engpath', 'heading': 'ENGINEERING', 'backimg': 'back.webp' },
-    'liberal-arts': { 'x': 260, 'y': 300, 'n1': 10, 'n2': 15, 'n3': 25, 'pathid': 'lapath', 'heading': 'LIBERAL ARTS', 'backimg': 'liberal.webp' },
-    'allied-health': { 'x': 250, 'y': 300, 'n1': 7, 'n2': 18, 'n3': 8, 'pathid': 'ahpath', 'heading': 'ALLIED HEALTH', 'backimg': 'health.webp' },
-    'basic-science': { 'x': 250, 'y': 300, 'n1': 5, 'n2': 17, 'n3': 8, 'pathid': 'bspath', 'heading': 'BASIC SCIENCE', 'backimg': 'golden.webp' },
-    'management': { 'x': 260, 'y': 300, 'n1': 7, 'n2': 9, 'n3': 13, 'pathid': 'manpath', 'heading': 'MANAGEMENT', 'backimg': 'voilet.webp' }
+    'engineering': { 'x': 260, 'y': 52, 'n1': 8, 'n2': 15, 'n3': 8, 'pathid': 'engpath', 'heading': 'ENGINEERING', 'backimg': 'back.webp' },
+    'liberal-arts': { 'x': 260, 'y': 52, 'n1': 10, 'n2': 15, 'n3': 25, 'pathid': 'lapath', 'heading': 'LIBERAL ARTS', 'backimg': 'liberal.webp' },
+    'allied-health': { 'x': 250, 'y': 52, 'n1': 7, 'n2': 18, 'n3': 8, 'pathid': 'ahpath', 'heading': 'ALLIED HEALTH', 'backimg': 'health.webp' },
+    'basic-science': { 'x': 250, 'y': 52, 'n1': 5, 'n2': 17, 'n3': 8, 'pathid': 'bspath', 'heading': 'BASIC SCIENCE', 'backimg': 'golden.webp' },
+    'management': { 'x': 260, 'y': 52, 'n1': 7, 'n2': 9, 'n3': 13, 'pathid': 'manpath', 'heading': 'MANAGEMENT', 'backimg': 'voilet.webp' }
 };
 window.onload = function() {
     if (sessionStorage.getItem("page") == "main-content") {
@@ -30,7 +30,7 @@ function currentcluster(cluster) {
     document.getElementById(cpith).style.fill = "none";
     var cldetails = clusterdetails[cluster];
     var x = cldetails['x'];
-    var y = cldetails['y'];
+    var y = cldetails['y'] + "%";
     var n1 = cldetails['n1'];
     var n2 = cldetails['n2'];
     var n3 = cldetails['n3'];
