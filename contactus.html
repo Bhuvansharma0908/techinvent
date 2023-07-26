@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .contact-us {
+            width: 80vw;
+            height: 90vh;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: fixed;
+            top: 13%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: #020612;
+            z-index: 2;
+            opacity: 100%;
+            /* display: none; */
+            transition: all ease-in-out 1s;
+        }
+        
+        .contact-us-left {
+            width: 44%;
+            padding: 3%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            color: #fefffe;
+            border-right: #fefffe solid 2px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contact-us-left hr {
+            width: 90%;
+            margin-left: 5%;
+            border: #EC612A 1px solid;
+        }
+        
+        .contact-us-right {
+            width: 44%;
+            padding: 3%;
+        }
+        
+        .contacts-table {
+            width: 70%;
+            margin-left: 10%;
+            color: #fefffe;
+            font-size: small;
+            font-weight: normal;
+            /* border: 1px solid white; */
+            border-collapse: collapse;
+            border-spacing: 0;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.96px;
+            text-align: center;
+        }
+        
+        .contact-frame-div {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: 90%;
+            /* clip-path: polygon(0% 0% , 30% 0% , 100% 90%, 100% 100%, 70% 100% , 0% 10%); */
+            position: relative;
+            /* z-index: 0; */
+        }
+        
+        .contact-frame-div::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 3px solid #EC612A;
+            clip-path: polygon(0% 0%, 30% 0%, 100% 90%, 100% 100%, 70% 100%, 0% 10%);
+        }
+        
+        .contact-right-content {
+            position: relative;
+            width: 90%;
+            height: 90%;
+            top: 5%;
+            left: 5%;
+            background-color: #fefefe;
+        }
+        
+        .contact-us-close {
+            position: fixed;
+            top: 2%;
+            right: 2%;
+            width: 30px;
+            height: 30px;
+            background-color: #EC612A;
+            color: #fefefe;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            opacity: 0%;
+            transition: ease 0.5s;
+            display: none;
+        }
+        
+        @media screen and (max-width:600px) {
+            .contact-us {
+                flex-direction: column;
+                width: 94%;
+                margin-left: 3%;
+                margin-right: 3%;
+                top: 15%;
+                padding-top: 0%;
+                position: absolute;
+                overflow-y: scroll;
+                height: 120vh;
+            }
+            .contact-us-left {
+                width: 94%;
+                border-right: none;
+                border-bottom: #EC612A solid 2px;
+            }
+            .contacts-table {
+                width: 94%;
+                margin-left: 3%;
+                font-size: small;
+            }
+            .contact-us-left hr {
+                display: none;
+            }
+            .contact-us-right {
+                width: 100%;
+                padding: 3%;
+                height: 600px;
+                overflow-y: scroll;
+            }
+            .contact-frame-div {
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div id="mySidebar" class="sidebar">
+        <a class="sidebarlinks" href="javascript:void(0)" id="closebtn" onclick="closesidebar()">&times;</a>
+        <br><br>
+        <a onclick="competitonpage()" class="sidebarlinks">COMPETETIONS</a>
+        <a class="sidebarlinks" onclick="workshoppage()">WORKSHOPS</a>
+        <a class="sidebarlinks" onclick="exibitionpage()">EXHIBITIONS</a>
+        <a class="sidebarlinks" onclick="lecturepage()">LECTURES</a>
+        <!-- <a class="sidebarlinks" onclick="opensponsor()">SPONSORS</a>
+        <a class="sidebarlinks" onclick="openaboutus()">ABOUT US</a> -->
+        <!-- <a class="sidebarlinks">ORGANIZING TEAM</a> -->
+        <a class="sidebarlinks" onclick="contactuspage()">CONTACT US</a>
+    </div>
+    <div class="nav-bar" style="display: flex;opacity: 1;" id="nav-bar">
+        <div class="nav-bar-1">
+            <span onclick="competitonpage()">COMPETETIONS</span>
+            <span onclick="workshoppage()">WORKSHOPS</span>
+            <span onclick="exibitionpage()">EXHIBITIONS</span>
+
+        </div>
+        <div class="nav-bar-2">
+            <img src="/cu logo.png" onclick="opencuweb()">
+            <a href="/index.html"><img src="/Tech logo.png" onclick="closecluster()"></a>
+            <button onclick="opensidebar()" type="button" class="opensidebar" id="opensidebar">&#9776;</button>
+        </div>
+        <div class="nav-bar-3">
+            <!-- <span onclick="opensponsor()">SPONSORS</span>
+            <span onclick="openaboutus()">ABOUT US</span> -->
+            <span onclick="lecturepage()">LECTURES</span>
+            <span>ORGANIZING TEAM</span>
+            <span onclick="contactuspage()">CONTACT US</span>
+        </div>
+    </div>
+
+    <div class="contact-us" id="contact-us">
+        <div class="contact-us-left">
+            <br><br><br><br>
+            <table class="contacts-table">
+                <tr>
+                    <td> </td>
+                    <td>
+                        <h1>Contact Us</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td>
+                        <h3 style="padding: 0%;padding-top: 10px;margin: 0%;">Student Coordinator</h3>
+                    </td>
+                </tr>
+                <tr height="40px">
+                    <td><img width="25px" height="25px" src="/user 1.png"></td>
+                    <td>Bhavya Kapoor</td>
+                </tr>
+                <tr>
+                    <td><img width="22px" height="22px" src="/call 1.png"></td>
+                    <td><a style="text-decoration: none;color: #fefefe;" href="tel:+916283018883">+91 6283018883</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h3 style="padding: 0%;padding-top: 20px;margin: 0%;">Faculty Coordinator</h3>
+                    </td>
+                </tr>
+                <tr height="40px">
+                    <td><img width="25px" height="25px" src="/user 1.png"></td>
+                    <td>Ankita Sharma</td>
+                </tr>
+                <tr>
+                    <td><img width="22px" height="22px" src="/call 1.png"></td>
+                    <td><a style="text-decoration: none;color: #fefefe;" href="tel:+916283018883">+91 6283018883</a></td>
+                </tr>
+            </table><br><br>
+            <hr>
+            <table class="contacts-table">
+                <tr height="40px">
+                    <td><img width="25px" height="25px" src="/envelope 1.png"></td>
+                    <td><a style="text-decoration: none;color: #fefefe;" href="mailto:info@ruahacademy.in">info@ruahacademy.in</a></td>
+                </tr>
+                <tr>
+                    <td><img width="22px" height="30px" src="/location.png"></td>
+                    <td><br>CHANDIGARH UNIVERSITY, NH-05,<br>Ludhiana - Chandigarh State Hwy,<br>Punjab 140413</td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact-us-right">
+            <div class="contact-frame-div" id="googleMap">
+                <div class="contact-right-content"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.12142597108!2d76.57575967472307!3d30.771171283775537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffb140bd63e07%3A0x68591e334d17a988!2sChandigarh%20University!5e0!3m2!1sen!2sin!4v1690362589707!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div>
+    </div>
+    <button class="contact-us-close" id="contact-us-close" onclick="closecontactus()">&times;</button>
+    <script>
+        function opencontactus() {
+            var contact_us = document.getElementById('contact-us');
+            var contact_close = document.getElementById('contact-us-close');
+            var main_content = document.getElementById('main-content');
+            var nav_bar = document.getElementById('nav-bar');
+            var footer = document.getElementById('footer');
+            main_content.style.opacity = '40%';
+            nav_bar.style.opacity = '40%';
+            footer.style.opacity = '40%';
+            contact_us.style.display = 'flex';
+            contact_us.style.opacity = '100%';
+            contact_close.style.display = 'block';
+            contact_close.style.opacity = '100%';
+            closesidebar();
+        }
+
+
+        function closecontactus() {
+            var contact_us = document.getElementById('contact-us');
+            var contact_close = document.getElementById('contact-us-close');
+            var main_content = document.getElementById('main-content');
+            var nav_bar = document.getElementById('nav-bar');
+            var footer = document.getElementById('footer');
+            main_content.style.opacity = '100%';
+            nav_bar.style.opacity = '100%';
+            footer.style.opacity = '100%';
+            contact_close.style.opacity = '0%';
+            contact_us.style.opacity = '0%';
+            contact_us.style.display = 'none';
+            contact_close.style.display  =  'none';
+        }
+    </script>
+    <script src="/index.js"></script>
+
+</body>
+
+</html>

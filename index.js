@@ -188,3 +188,7 @@ function workshoppage() {
 function exibitionpage() {
     window.open("exibition.html", "_blank");
 }
+
+function contactuspage() {
+    window.open("contactus.html", "_blank");
+}
