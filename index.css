@@ -14,7 +14,7 @@ body {
     /* background-position: top; */
     transition: ease 0.5s;
     overflow-y: scroll;
-    /* min-height: 100vh; */
+    min-height: 120%;
 }
 
 #home-content {
