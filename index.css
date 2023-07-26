@@ -54,7 +54,11 @@ body {
     margin-right: auto;
     opacity: 0%;
     margin-left: 4%;
-    z-index: 10;
+    z-index: 4;
+}
+
+.techlogo {
+    margin-bottom: 15px;
 }
 
 .nav-bar-1 {
@@ -138,6 +142,7 @@ body {
     border-radius: 50%;
     border: none;
     box-shadow: 2px 2px 5px #000000;
+    z-index: 5;
 }
 
 
@@ -164,6 +169,7 @@ body {
     padding-top: 60px;
     /* Place content 60px from the top */
     transition: 0.5s;
+    z-index: 5;
     /* 0.5 second transition effect to slide in the sidebar */
 }
 
@@ -387,6 +393,15 @@ footer {
 @media screen and (max-width:600px) {
     .start-section {
         padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .start-section svg {
+        height: 100;
+        width: 70%;
+        margin-left: 13%;
     }
     body {
         overflow-y: scroll;
@@ -413,5 +428,8 @@ footer {
     }
     #footer {
         display: none;
+    }
+    .techlogo {
+        margin-bottom: 8px;
     }
 }
