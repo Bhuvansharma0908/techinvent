@@ -192,3 +192,7 @@ function exibitionpage() {
 function contactuspage() {
     window.open("contactus.html", "_blank");
 }
+
+function teampage() {
+    window.open("team.html", "_blank");
+}

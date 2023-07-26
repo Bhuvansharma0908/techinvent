@@ -54,6 +54,7 @@ body {
     margin-right: auto;
     opacity: 0%;
     margin-left: 4%;
+    z-index: 10;
 }
 
 .nav-bar-1 {

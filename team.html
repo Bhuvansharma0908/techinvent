@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Invent | Team</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<style>
+    .team-section {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    
+    .team-page-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 3%;
+        width: 100%;
+        height: 100vh;
+        color: #fefefe;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .team-page-1 h1 {
+        font-size: 3em;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    
+    .team-page-2 {
+        width: 100%;
+        height: 100%;
+        background-color: #020612;
+        box-shadow: 0px 0px 5px 10px #020612;
+    }
+    
+    .org-team,
+    .brand-team {
+        color: white;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 50%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 80%;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .member-frame {
+        width: 250px;
+        margin: 30px;
+        height: 280px;
+        margin-top: 0%;
+        position: relative;
+    }
+    
+    .member-box {
+        width: 230px;
+        height: 260px;
+        margin: 10px;
+        background-color: white;
+        clip-path: polygon(0% 3%, 20% 3%, 23% 0%, 77% 0%, 80% 3%, 100% 3%, 100% 60%, 100% 95%, 95% 100%, 85% 100%, 80% 95%, 20% 95%, 15% 100%, 5% 100%, 0% 95%);
+    }
+    
+    .member-frame::before {
+        content: "";
+        width: 250px;
+        height: 280px;
+        position: absolute;
+        background-color: #EC612A;
+        clip-path: polygon(2% 40%, 0% 40%, 0% 3%, 20% 3%, 23% 0%, 50% 0%, 50% 2%, 25% 2%, 22% 5%, 2% 5%, 2% 40%, 50% 93%, 50% 95%, 70% 95%, 75% 100%, 95% 100%, 100% 95%, 100% 50%, 98% 50%, 98% 93%, 93% 98%, 77% 98%, 72% 93%, 50% 93%);
+    }
+    
+    .member-upperdiv {
+        background-color: #1F1B37;
+        height: 50%;
+        width: 100%;
+        position: relative;
+    }
+    
+    .member-lowerdiv {
+        background-color: white;
+        height: 50%;
+        width: 100%;
+        color: #020612;
+        text-align: center;
+        font-weight: 900;
+        padding-top: 40px;
+    }
+    
+    .member-upperdiv img {
+        width: 70px;
+        height: 70px;
+        border: 2px solid #EC612A;
+        border-radius: 50%;
+        position: absolute;
+        top: 65%;
+        left: 30%;
+        background-color: #020612;
+    }
+    
+    @media screen and (max-width:600px) {
+        .team-page-1 {
+            width: 80%;
+            margin-left: 10%;
+            padding-top: 25%;
+        }
+        .team-page-1 svg {
+            scale: 0.5;
+            width: 100%;
+        }
+        .team-page-1 h1 {
+            font-size: 3em;
+        }
+        .member-frame {
+            width: 170px;
+            height: 200px;
+        }
+        .member-frame::before {
+            width: 170px;
+            height: 200px;
+        }
+        .member-box {
+            width: 150px;
+            height: 180px;
+        }
+        .member-upperdiv img {
+            width: 50px;
+            height: 50px;
+        }
+        .member-lowerdiv {
+            padding-top: 25px;
+            font-size: small;
+        }
+    }
+</style>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a class="sidebarlinks" href="javascript:void(0)" id="closebtn" onclick="closesidebar()">&times;</a>
+        <br><br>
+        <a onclick="competitonpage()" class="sidebarlinks">COMPETETIONS</a>
+        <a class="sidebarlinks" onclick="workshoppage()">WORKSHOPS</a>
+        <a class="sidebarlinks" onclick="exibitionpage()">EXHIBITIONS</a>
+        <a class="sidebarlinks" onclick="lecturepage()">LECTURES</a>
+        <!-- <a class="sidebarlinks" onclick="opensponsor()">SPONSORS</a>
+        <a class="sidebarlinks" onclick="openaboutus()">ABOUT US</a> -->
+        <!-- <a class="sidebarlinks">ORGANIZING TEAM</a> -->
+        <a class="sidebarlinks" onclick="teampage()">ORGANIZING TEAM</a>
+        <a class="sidebarlinks" onclick="contactuspage()">CONTACT US</a>
+    </div>
+    <div class="nav-bar" style="display: flex;opacity: 1;" id="nav-bar">
+        <div class="nav-bar-1">
+            <span onclick="competitonpage()">COMPETETIONS</span>
+            <span onclick="workshoppage()">WORKSHOPS</span>
+            <span onclick="exibitionpage()">EXHIBITIONS</span>
+
+        </div>
+        <div class="nav-bar-2">
+            <img src="/cu logo.png" onclick="opencuweb()">
+            <a href="/index.html"><img src="/Tech logo.png" onclick="closecluster()"></a>
+            <button onclick="opensidebar()" type="button" class="opensidebar" id="opensidebar">&#9776;</button>
+        </div>
+        <div class="nav-bar-3">
+            <!-- <span onclick="opensponsor()">SPONSORS</span>
+            <span onclick="openaboutus()">ABOUT US</span> -->
+            <span onclick="lecturepage()">LECTURES</span>
+            <span onclick="teampage()">ORGANIZING TEAM</span>
+            <span onclick="contactuspage()">CONTACT US</span>
+        </div>
+    </div>
+    <div class="team-section" id="team-section">
+        <div class="team-page-1">
+            <h1>OUR<br>TEAM</h1>
+            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel doloribus fuga commodi repudiandae autem mollitia nemo minima totam ut eius.</h4><br>
+            <svg width="349" height="90" viewBox="0 0 349 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40.4182 53.21C36.1552 53.21 33.7612 51.53 33.7612 48.254V48.128H36.9112V48.506C36.9112 49.808 37.5622 50.333 40.4182 50.333C42.9382 50.333 43.5262 49.955 43.5262 49.01C43.5262 48.149 43.0432 47.834 41.5942 47.582L37.6462 47.015C35.1262 46.616 33.6352 45.356 33.6352 43.067C33.6352 40.946 35.3572 38.72 40.0822 38.72C44.4082 38.72 46.4242 40.715 46.4242 43.676V43.802H43.2532V43.508C43.2532 42.164 42.5602 41.597 39.7672 41.597C37.4992 41.597 36.8062 42.038 36.8062 42.941C36.8062 43.76 37.2682 44.054 38.4442 44.264L42.3922 44.894C45.5422 45.398 46.6762 46.931 46.6762 48.863C46.6762 51.152 44.8912 53.21 40.4182 53.21ZM57.262 53.21C52.621 53.21 49.744 50.354 49.744 45.965C49.744 41.576 52.621 38.72 57.262 38.72C61.63 38.72 64.444 40.904 64.444 44.474V44.789H60.9371V44.474C60.9371 42.626 59.887 41.744 57.325 41.744C54.238 41.744 53.083 42.836 53.083 45.965C53.083 49.094 54.238 50.186 57.325 50.186C59.887 50.186 60.9371 49.304 60.9371 47.456V47.141H64.444V47.456C64.444 51.026 61.651 53.21 57.262 53.21ZM71.0591 53H67.909V38.93H75.6791C79.1441 38.93 81.1181 40.463 81.1181 43.151C81.1181 45.44 79.795 46.805 77.1491 47.057V47.225C78.4091 47.561 78.8921 48.233 79.417 49.22L81.4541 53H77.8001L75.8681 49.346C75.3011 48.254 74.7761 47.897 73.138 47.897H71.0591V53ZM71.0591 41.765V45.524H75.6581C77.1491 45.524 77.8211 45.104 77.8211 43.634C77.8211 42.248 77.1491 41.765 75.6581 41.765H71.0591ZM91.7941 53.21C87.1321 53.21 84.2341 50.354 84.2341 45.965C84.2341 41.576 87.1321 38.72 91.7941 38.72C96.5611 38.72 99.4381 41.576 99.4381 45.965C99.4381 50.354 96.5611 53.21 91.7941 53.21ZM91.7941 50.186C94.8811 50.186 96.0781 49.094 96.0781 45.965C96.0781 42.836 94.8811 41.744 91.7941 41.744C88.7071 41.744 87.5731 42.836 87.5731 45.965C87.5731 49.094 88.7071 50.186 91.7941 50.186ZM114.441 53H102.912V38.93H106.062V50.165H114.441V53ZM129.338 53H117.809V38.93H120.959V50.165H129.338V53ZM145.879 53H142.729V41.765H137.5V38.93H151.108V41.765H145.879V53ZM161.582 53.21C156.92 53.21 154.022 50.354 154.022 45.965C154.022 41.576 156.92 38.72 161.582 38.72C166.349 38.72 169.226 41.576 169.226 45.965C169.226 50.354 166.349 53.21 161.582 53.21ZM161.582 50.186C164.669 50.186 165.866 49.094 165.866 45.965C165.866 42.836 164.669 41.744 161.582 41.744C158.495 41.744 157.361 42.836 157.361 45.965C157.361 49.094 158.495 50.186 161.582 50.186ZM187.364 53H182.87L177.032 38.93H180.833L185.054 49.808H185.264L189.422 38.93H193.202L187.364 53ZM199.122 53H195.972V38.93H199.122V53ZM214.778 53H202.871V38.93H214.778V41.765H206.021V44.516H214.463V47.33H206.021V50.165H214.778V53ZM225.693 53H221.01L217.692 38.93H221.22L222.921 46.91L223.404 49.997H223.635L224.286 46.91L226.638 38.93H231.321L233.652 46.91L234.303 49.997H234.534L235.017 46.91L236.718 38.93H240.162L236.823 53H232.14L230.04 45.965L229.053 41.912H228.822L227.835 45.965L225.693 53ZM251.84 53H248.69V38.93H252.953L256.25 45.86L257.573 49.157H257.804L259.085 45.86L262.277 38.93H266.561V53H263.411V45.86L263.516 43.655H263.285L262.466 45.86L259.526 52.16H255.704L252.764 45.86L251.945 43.655H251.714L251.84 45.86V53ZM277.558 53.21C272.896 53.21 269.998 50.354 269.998 45.965C269.998 41.576 272.896 38.72 277.558 38.72C282.325 38.72 285.202 41.576 285.202 45.965C285.202 50.354 282.325 53.21 277.558 53.21ZM277.558 50.186C280.645 50.186 281.842 49.094 281.842 45.965C281.842 42.836 280.645 41.744 277.558 41.744C274.471 41.744 273.337 42.836 273.337 45.965C273.337 49.094 274.471 50.186 277.558 50.186ZM291.826 53H288.676V38.93H296.446C299.911 38.93 301.885 40.463 301.885 43.151C301.885 45.44 300.562 46.805 297.916 47.057V47.225C299.176 47.561 299.659 48.233 300.184 49.22L302.221 53H298.567L296.635 49.346C296.068 48.254 295.543 47.897 293.905 47.897H291.826V53ZM291.826 41.765V45.524H296.425C297.916 45.524 298.588 45.104 298.588 43.634C298.588 42.248 297.916 41.765 296.425 41.765H291.826ZM317.223 53H305.316V38.93H317.223V41.765H308.466V44.516H316.908V47.33H308.466V50.165H317.223V53Z" fill="white"/>
+                <path d="M25.1922 3H31.295H163.477H346V33.7964V64.5927L323.808 87H3V57.4967V25.269L25.1922 3Z" stroke="white" stroke-width="1.5"/>
+                <path d="M3 57.4967V25.269L25.1922 3H31.295L113.5 3M346 33.7964V64.5927L323.808 87H245" stroke="#F93308" stroke-width="5.5"/>
+                </svg>
+        </div>
+        <div class="team-page-2">
+            <div class="org-team">
+                <br>
+                <h1>Organising team</h1>
+                <div class="team-list">
+                    <div class="member-frame">
+                        <div class="member-box">
+                            <div class="member-upperdiv"><img src="/user 1.png"></div>
+                            <div class="member-lowerdiv">NAME<br>DESIGNATION</div>
+                        </div>
+                    </div>
+                    <div class="member-frame">
+                        <div class="member-box">
+                            <div class="member-upperdiv"><img src="/user 1.png"></div>
+                            <div class="member-lowerdiv">NAME<br>DESIGNATION</div>
+                        </div>
+                    </div>
+                    <div class="member-frame">
+                        <div class="member-box">
+                            <div class="member-upperdiv"><img src="/user 1.png"></div>
+                            <div class="member-lowerdiv">NAME<br>DESIGNATION</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brand-team">
+                <br>
+                <h1>Branding team</h1>
+                <div class="team-list">
+                    <div class="member-frame">
+                        <div class="member-box">
+                            <div class="member-upperdiv"><img src="/user 1.png"></div>
+                            <div class="member-lowerdiv">NAME<br>DESIGNATION</div>
+                        </div>
+                    </div>
+                    <div class="member-frame">
+                        <div class="member-box">
+                            <div class="member-upperdiv"><img src="/user 1.png"></div>
+                            <div class="member-lowerdiv">NAME<br>DESIGNATION</div>
+                        </div>
+                    </div>
+                    <div class="member-frame">
+                        <div class="member-box">
+                            <div class="member-upperdiv"><img src="/user 1.png"></div>
+                            <div class="member-lowerdiv">NAME<br>DESIGNATION</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+    <script src="particlesmain.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+</body>
+
+</html>
