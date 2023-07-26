@@ -7,19 +7,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <style>
+        body {
+            background-color: #020612;
+        }
+        
         .contact-us {
-            width: 80vw;
-            height: 90vh;
-            margin-left: 10%;
-            margin-right: 10%;
+            width: 100vw;
+            height: 100vh;
             position: fixed;
-            top: 13%;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            background-color: #020612;
             z-index: 2;
             opacity: 100%;
+            background: url(/milkyway.png), #020612;
             /* display: none; */
             transition: all ease-in-out 1s;
         }
@@ -34,6 +35,8 @@
             border-right: #fefffe solid 2px;
             align-items: center;
             justify-content: center;
+            margin-top: 7%;
+            height: 70%;
         }
         
         .contact-us-left hr {
@@ -45,6 +48,8 @@
         .contact-us-right {
             width: 44%;
             padding: 3%;
+            margin-top: 8%;
+            height: 80%;
         }
         
         .contacts-table {
@@ -113,14 +118,13 @@
         @media screen and (max-width:600px) {
             .contact-us {
                 flex-direction: column;
-                width: 94%;
-                margin-left: 3%;
-                margin-right: 3%;
-                top: 15%;
+                width: 100%;
                 padding-top: 0%;
                 position: absolute;
                 overflow-y: scroll;
                 height: 120vh;
+                background: url(/milkyway.png), #020612;
+                overflow-x: hidden;
             }
             .contact-us-left {
                 width: 94%;
