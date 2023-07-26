@@ -96,6 +96,7 @@
         width: 100%;
         text-align: center;
         min-height: 100%;
+        overflow-y: hidden;
     }
     .cluster-map-1 {
         display: none;
