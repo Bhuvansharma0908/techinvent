@@ -11,10 +11,10 @@ body {
     background-color: #13161E;
     padding: 0%;
     margin: 0%;
-    /* background-position: top; */
+    background-position: top;
     transition: ease 0.5s;
     overflow-y: scroll;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 #home-content {
@@ -391,9 +391,6 @@ footer {
 }
 
 @media screen and (max-width:600px) {
-    body {
-        min-height: 100vh;
-    }
     .start-section {
         padding-top: 30px;
         display: flex;
